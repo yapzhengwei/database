@@ -1,5 +1,4 @@
 ## Import libraries 
-## test comment 
 
 import csv, ast, psycopg2
 import pandas as pd
