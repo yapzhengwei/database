@@ -3,7 +3,16 @@ Example:
 
     import push_data from database
 
-    push_data().to_sql(filepath ="/Users/yapzhengwei/SparkBeyond/Kaggle/Data/market_train_volume_droppednaoutliers_reset.csv",
-                        table_name = 'market_train_volume_droppednaoutliers_reset',
-                        time_col='time',
-                        time_col_name = 'train_time')
+    push_data().to_sql(dbname = 'apacds',
+                        user = 'apacds', 
+                        host = 'apacds.ckcivkxzsrfb.ap-southeast-1.rds.amazonaws.com', 
+                        password ='Starwars_123',
+                        port = 5432,
+                        filepath ='/path/to/file.csv',
+                        table_name = 'my_table_name', 
+                        look_up = 'my_look_up_column', ## default None
+                        look_up_name = 'my_look_up_column_name', ## default None
+                        time_col = 'my_time_column', ## default None
+                        time_col_name = 'my_time_column_name') ## default None
+                        
+                        
